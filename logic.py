@@ -43,9 +43,3 @@ def GetMax():
 
 def GetAverage():
     return __Average
-
-
-
-        
-
-
