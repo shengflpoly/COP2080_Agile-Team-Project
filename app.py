@@ -10,10 +10,21 @@ if (st.sidebar.button("Add Student")):
     data = [name, score]
 
 #Task C display
-#from logic import ___
+from logic import GetMin, GetMax, GetAverage
 st.header("Faculty Grade Dashboard")
+
+avg = GetAverage()
+max = GetMax()
+min = GetMin()
 
 col1, col2, col3 = st.columns(3)
 col1.metric("Average", avg)
-col2.metric("Highest", high)
-col3.metric("Lowest", low)
+col2.metric("Highest", max)
+col3.metric("Lowest", min)
+
+st.subheader("Grade Distribution")
+
+
+st.subheader("Current Roaster")
+
+
