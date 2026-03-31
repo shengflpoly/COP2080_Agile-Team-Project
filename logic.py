@@ -1,5 +1,6 @@
 import pandas as pd
-__Students = pd.DataFrame(columns=["Name", "Score", "Grade"])
+import streamlit as st
+__Students = st.session_state['df']
 __Average = 0
 __Max = 0
 __Min = 0
